@@ -1,0 +1,28 @@
+AST_USER="asterisk"
+AST_GROUP="asterisk"
+COLOR=yes
+
+
+# config 위치
+#ALTCONF=/etc/asterisk/asterisk.conf
+
+# 크래쉬 날때 파일만든다고함
+#COREDUMP=yes
+
+# 로드에버리지 넘칠때 전화 막기 ??
+#MAXLOAD=4
+
+# 전화 연결 맥스
+MAXCALLS=1000
+
+# 콘솔 메세지 얼마나 자세히 나오는지
+#VERBOSITY=3
+
+# Enable internal timing if the DAHDI timer is available.  The default
+# behaviour is that outbound packets are phase locked to inbound packets.
+# Enabling this option causes them to be locked to the internal DAHDI
+# timer instead.
+#INTERNALTIMING=yes
+
+# 임시저장 디렉토리
+#TEMPRECORDINGLOCATION=yes

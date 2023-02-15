@@ -17,6 +17,10 @@ RUN curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | bash -s -- --
 # 마리아디비 설치
 RUN yum install Mariadb-server MariaDB -y
 
+# 로그 폴더 생성, 권한 설정
+RUN mkdir -p /var/log/mysql
+RUN chown mysql /var/log/mysql
+
 COPY my.cnf /etc/my.cnf
 
 EXPOSE 3306
